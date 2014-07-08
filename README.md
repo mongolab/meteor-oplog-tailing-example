@@ -7,7 +7,7 @@ Original blog post for reference: [blog.mongolab.com](blog.mongolab.com)
 
 ## Running the app
  
-#### Bundle and untar the application
+#### Bundle and extract the application
 ```
 > meteor bundle app.tgz
 > tar -zxvf app.tgz
