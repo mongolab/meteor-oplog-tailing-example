@@ -1,0 +1,42 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+  <div>
+    <!-- Players template to display all players in database -->
+    {{> players}}
+  </div>
+  <div>
+    <!-- User input form to add players -->
+    {{> form}}
+  </div>
+  <div>
+    <!-- Real-time metrics to confirm oplog tailing -->
+    {{> serverFacts}}
+  </div>
+</body>
+
+<template name="players">
+  <h1>List of players</h1>
+    <ul>
+      {{#each scorers}}
+        <li>
+          <div>
+            Name: {{ this.name }}
+          <div>
+          <div>
+            Score: {{ this.score }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+</template>
+
+<template name ="form">
+  <form id="myform">                       
+    Name: <input type="text" name="name"/>
+    Score: <input type="number" name="score"/>
+    <input type="submit" id="submit"/>
+  </form>
+</template>
