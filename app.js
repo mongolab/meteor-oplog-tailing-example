@@ -2,6 +2,11 @@ if (Meteor.isServer) {
   Meteor.publish("playerData", function() {
     return Players.find();
   });
+  
+  // Set which users can see server metrics
+  Facts.setUserIdFilter(function () {
+    return true;
+  });
 }
 
 if (Meteor.isClient) {
