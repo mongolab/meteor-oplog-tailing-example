@@ -3,7 +3,7 @@ if (Meteor.isClient) {
 
   // Pass query results to the "players" template
   Template.players.scorers = function () {
-    return Players.find();;
+    return Players.find();
   };
 
   // Grab user input fields
