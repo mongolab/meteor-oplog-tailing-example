@@ -1,3 +1,9 @@
+if (Meteor.isServer) {
+  Meteor.publish("playerData", function() {
+    return Players.find();
+  });
+}
+
 if (Meteor.isClient) {
   Meteor.subscribe("playerData");
 
@@ -20,11 +26,5 @@ if (Meteor.isClient) {
         if(err) throw err;
       });
     }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.publish("playerData", function() {
-    return Players.find();
   });
 }
