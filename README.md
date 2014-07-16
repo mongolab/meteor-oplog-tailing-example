@@ -5,6 +5,13 @@ An example Meteor app that utilizes oplog tailing
 
 Original blog post for reference: [blog.mongolab.com](blog.mongolab.com)
 
+## Setting up the app
+```
+> meteor create app
+```
+
+Once Meteor project is created, cd into the "app" directory and copy the repo files there.
+
 ## Running the app
  
 #### Bundle and extract the application
