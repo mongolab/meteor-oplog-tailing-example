@@ -1,9 +1,9 @@
-meteor-oplog-tailing
+meteor-oplog-tailing-example
 ====================
 
 An example Meteor app that utilizes MongoDB oplog tailing.
 
-Original blog post for reference: [blog.mongolab.com](blog.mongolab.com)
+Original blog post for reference: [http://blog.mongolab.com/2014/07/tutorial-scaling-meteor-with-mongodb-oplog-tailing](http://blog.mongolab.com/2014/07/tutorial-scaling-meteor-with-mongodb-oplog-tailing)
 
 ## Set up the app
 ```
